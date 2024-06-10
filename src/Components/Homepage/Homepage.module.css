@@ -1,0 +1,20 @@
+.header {
+  width: 100vw;
+  background-color: red;
+}
+
+.headerImg {
+  composes: header;
+  /* background-image:; */
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'ragna-runes';
+  letter-spacing: 0.25rem;
+  text-wrap: nowrap;
+  font-weight: bold;
+}
