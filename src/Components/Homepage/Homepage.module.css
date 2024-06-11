@@ -1,20 +1,93 @@
 .header {
-  width: 100vw;
-  background-color: red;
+  color: white;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  height: 60vh;
+  background-color: black;
 }
 
 .headerImg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
   composes: header;
-  /* background-image:; */
+  background-image: url('./public/forge.jpg');
   background-position: center;
   background-repeat: none;
   background-size: cover;
 }
 
+.headerInfo {
+  font-family: 'poppins';
+  filter: invert(0%);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4rem;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 .title {
-  font-size: 2rem;
+  font-size: 5rem;
   font-family: 'ragna-runes';
   letter-spacing: 0.25rem;
   text-wrap: nowrap;
   font-weight: bold;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.button {
+  box-sizing: border-box;
+  width: auto;
+  font-size: 2rem;
+  color: white;
+  border: solid white 3px;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background-clip: text;
+  transition:
+    color 0.25s linear,
+    border 0.25s linear;
+}
+
+.button:hover {
+  color: red;
+  border: solid red 3px;
+}
+
+.bestSelling {
+  grid-column: 1 / 3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  align-items: center;
+  color: white;
+  font-family: 'poppins';
+  gap: 5rem;
+}
+
+.title2 {
+  font-size: 3.5rem;
+  font-family: 'ragna-runes';
+  letter-spacing: 0.25rem;
+  text-wrap: nowrap;
+  font-weight: bold;
+}
+
+.bestSellingContainer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  max-width: 1500px;
+  gap: 5rem;
+  justify-self: center;
 }

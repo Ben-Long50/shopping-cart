@@ -1,21 +1,32 @@
 .navBar {
+  position: sticky;
+  top: 0;
   box-sizing: border-box;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   color: white;
-  background-color: rgb(59, 59, 59);
+  background-color: var(--primary-bg);
+  z-index: 1;
 }
 
 .icon {
   fill: rgb(255, 255, 255);
 }
 
-.navContainer {
+.navTitle {
+  justify-self: left;
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.navContainer {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .title {
@@ -25,9 +36,20 @@
   text-wrap: nowrap;
 }
 
-.navLink {
+.navLink,
+.cart {
   font-size: 1.5rem;
   font-family: 'poppins';
   text-decoration: none;
   color: white;
+  transition: color 0.25s linear;
+}
+
+.navLink:hover,
+.cart:hover {
+  color: red;
+}
+
+.cart {
+  justify-self: right;
 }
