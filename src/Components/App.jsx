@@ -9,6 +9,7 @@ import './styles/reset-css.css';
 const App = () => {
   const [products, setProducts] = useState([]);
   const [topProducts, setTopProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,8 +42,8 @@ const App = () => {
     <div className="bgFilter">
       <Navigation />
       <div className={styles.pageLayout}>
-        <Outlet context={[products, setProducts, topProducts]} />
-        <Cart />
+        <Outlet context={[products, setProducts, topProducts, cart, setCart]} />
+        <Cart cart={cart} />
       </div>
     </div>
   );

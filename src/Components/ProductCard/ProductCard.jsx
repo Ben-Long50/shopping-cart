@@ -1,10 +1,52 @@
 import styles from './ProductCard.module.css';
 import StarRatings from 'react-star-ratings';
+import { Link } from 'react-router-dom';
 
-const ProductCard = ({ title, description, image, price, rating, count }) => {
+const ProductCard = ({
+  id,
+  title,
+  description,
+  image,
+  price,
+  rating,
+  count,
+  cart,
+  setCart,
+}) => {
+  function addToCart() {
+    const shoppingCart = document.querySelector('#cart');
+    shoppingCart.classList.add('visible');
+
+    let itemInCart = false;
+
+    const newCart = cart.map((item) => {
+      if (item.id === id) {
+        itemInCart = true;
+        item.quantity++;
+        return item;
+      } else {
+        return item;
+      }
+    });
+
+    if (itemInCart === true) {
+      setCart(newCart);
+    } else {
+      setCart([
+        ...cart,
+        { id: id, title: title, image: image, price: price, quantity: 1 },
+      ]);
+    }
+  }
+
+  const pathArray = title.split(' ');
+  const path = pathArray.join('-');
+
   return (
-    <div className={styles.card}>
-      <h2 className={styles.title}>{title}</h2>
+    <div to={title} className={styles.card}>
+      <Link to={`/${path}`} className={styles.title}>
+        {title}
+      </Link>
       <div
         className={styles.productImg}
         style={{ backgroundImage: `url(${image})` }}
@@ -21,7 +63,9 @@ const ProductCard = ({ title, description, image, price, rating, count }) => {
       <p className={styles.description}>{description}</p>
       <div className={styles.priceContainer}>
         <div className={styles.title}>{price}</div>
-        <button className={styles.cartButton}>Add to Cart</button>
+        <button onClick={addToCart} className={styles.cartButton}>
+          Add to Cart
+        </button>
       </div>
     </div>
   );

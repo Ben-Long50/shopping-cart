@@ -1,5 +1,11 @@
 .title {
   font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.title:hover {
+  text-decoration: underline;
 }
 
 .productImg {
