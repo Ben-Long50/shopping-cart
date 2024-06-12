@@ -2,7 +2,7 @@
   flex-grow: 1;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr clamp(500px, 25vw, 800px);
+  grid-template-columns: 1fr clamp(360px, 100vw, 600px);
   grid-template-rows: auto 100%;
 }
 

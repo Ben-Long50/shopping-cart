@@ -41,6 +41,7 @@ const App = () => {
     const cart = document.querySelector('#cart');
     const pageLayout = document.querySelector('#page-layout');
     cart.classList.remove('visible');
+    cart.style.display = 'none';
     pageLayout.classList.remove('tinted');
   };
 

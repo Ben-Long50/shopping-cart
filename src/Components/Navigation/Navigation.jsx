@@ -7,7 +7,16 @@ const Navigation = ({ cart, hideCart }) => {
   function toggleCart() {
     const cart = document.querySelector('#cart');
     const pageLayout = document.querySelector('#page-layout');
-    cart.classList.toggle('visible');
+    if (!cart.classList.contains('visible')) {
+      cart.style.display = 'block';
+      cart.offsetHeight;
+      cart.classList.toggle('visible');
+    } else {
+      cart.classList.toggle('visible');
+      setTimeout(() => {
+        cart.style.display = 'none';
+      }, 500);
+    }
     pageLayout.classList.toggle('tinted');
   }
   let totalItems = 0;
@@ -19,7 +28,11 @@ const Navigation = ({ cart, hideCart }) => {
       <div className={styles.bgFilter}>
         <div className={styles.bgFilter2}>
           <div className={styles.navTitle}>
-            <Icon className={styles.icon} path={mdiAnvil} size={'3.5rem'} />
+            <Icon
+              className={styles.icon}
+              path={mdiAnvil}
+              size={'clamp(2.75rem, 9vw, 3.5rem'}
+            />
             <h2 className={styles.title}>Brokkr&apos;s Anvil</h2>
           </div>
           <div className={styles.navContainer} onClick={hideCart}>
@@ -44,7 +57,11 @@ const Navigation = ({ cart, hideCart }) => {
             </Link>
           </div>
           <div className={styles.cart} onClick={toggleCart}>
-            <Icon className={styles.cartIcon} path={mdiCart} size={'2.5rem'} />
+            <Icon
+              className={styles.cartIcon}
+              path={mdiCart}
+              size={'clamp(2rem, 9vw, 2.5rem'}
+            />
             {totalItems > 0 && (
               <div className={styles.itemCount}>{totalItems}</div>
             )}

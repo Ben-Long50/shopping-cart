@@ -1,4 +1,5 @@
 .cart {
+  display: none;
   font-size: 1.25rem;
   font-family: 'poppins';
   color: white;

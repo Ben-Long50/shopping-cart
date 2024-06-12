@@ -28,7 +28,7 @@
 }
 
 .description {
-  height: 3rem;
+  /* height: 3rem; */
   overflow: hidden;
   transition: height 1s ease;
 }
