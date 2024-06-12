@@ -86,6 +86,7 @@
 }
 
 .bestSellingContainer {
+  width: 100%;
   max-width: 1500px;
   justify-self: center;
 }
@@ -93,6 +94,6 @@
 .bestSellingGrid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: clamp(1.5rem, 7vw, 3rem);
 }
