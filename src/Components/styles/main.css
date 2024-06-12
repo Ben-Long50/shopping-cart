@@ -20,7 +20,7 @@ body {
 #root {
   --primary-bg: rgba(61, 61, 61, 0.75);
   min-height: 100vh;
-  background-image: url('./public/images/stone-background.jpg');
+  background-image: url('/images/stone-background.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
