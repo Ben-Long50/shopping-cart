@@ -9,22 +9,24 @@ const Store = () => {
   return (
     <div className={styles.storeLayout}>
       <h1 className={styles.title}>Store</h1>
-      <div className={styles.storeList}>
-        {products.map((product) => (
-          <ProductCard
-            className={styles.card}
-            key={product.id}
-            id={product.id}
-            title={product.title}
-            description={product.description}
-            image={product.image}
-            price={product.price}
-            rating={product.rating.rate}
-            count={product.rating.count}
-            cart={cart}
-            setCart={setCart}
-          />
-        ))}
+      <div className={styles.storeContainer}>
+        <div className={styles.storeList}>
+          {products.map((product) => (
+            <ProductCard
+              className={styles.card}
+              key={product.id}
+              id={product.id}
+              title={product.title}
+              description={product.description}
+              image={product.image}
+              price={product.price}
+              rating={product.rating.rate}
+              count={product.rating.count}
+              cart={cart}
+              setCart={setCart}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

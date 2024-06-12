@@ -4,10 +4,10 @@
     "title": "Dwarven Warblade",
     "description": "Forged by the finest dwarven blacksmiths, this warblade is a symbol of strength and honor. Crafted from the finest mithril, it is both sharp and durable, capable of cleaving through enemy ranks with ease.",
     "image": "./images/dwarven-warblade.jpg",
-    "price": 150.99,
+    "price": 149.99,
     "rating": {
       "rate": 4.8,
-      "count": 75
+      "count": 154
     }
   },
   {
@@ -15,7 +15,7 @@
     "title": "Axe of the Mountain King",
     "description": "The Axe of the Mountain King is a fearsome weapon, imbued with ancient dwarven runes of power. Crafted from enchanted steel mined from the heart of the mountains, it strikes with the force of a thunderstorm.",
     "image": "./images/axe-of-the-mountain-king.jpg",
-    "price": 180.5,
+    "price": 229.99,
     "rating": {
       "rate": 4.5,
       "count": 62
@@ -26,7 +26,7 @@
     "title": "Shield of Dwarven Valor",
     "description": "Wrought with the essence of dwarven valor, this shield offers unmatched protection on the battlefield. Crafted from enchanted adamantium, it can withstand the fiercest of blows while keeping its bearer unscathed.",
     "image": "./images/shield-of-dwarven-valor.jpg",
-    "price": 220.75,
+    "price": 199.99,
     "rating": {
       "rate": 4.9,
       "count": 88
@@ -37,7 +37,7 @@
     "title": "Armor of the Ironclad",
     "description": "The Armor of the Ironclad is a masterpiece of dwarven craftsmanship. Fashioned from layers of reinforced steel and adorned with intricate dwarven engravings, it provides unmatched defense in battle.",
     "image": "./images/armor-of-the-ironclad.jpg",
-    "price": 350.25,
+    "price": 299.99,
     "rating": {
       "rate": 4.7,
       "count": 105
@@ -48,7 +48,7 @@
     "title": "Dwarven Runeblade",
     "description": "The Dwarven Runeblade is a weapon of ancient power, passed down through generations of skilled dwarven blacksmiths. Infused with magical runes, it channels the very essence of the earth into devastating strikes.",
     "image": "./images/dwarven-runeblade.jpg",
-    "price": 200.99,
+    "price": 349.99,
     "rating": {
       "rate": 4.6,
       "count": 80
@@ -59,7 +59,7 @@
     "title": "Battle Axe of the Deep Mines",
     "description": "Forged deep within the bowels of the earth, this battle axe is a testament to the skill of dwarven artisans. Crafted from rare obsidian mined from the depths, it is as deadly as it is beautiful.",
     "image": "./images/battle-axe-of-the-deep-mines.jpg",
-    "price": 170.25,
+    "price": 374.99,
     "rating": {
       "rate": 4.4,
       "count": 70
@@ -70,7 +70,7 @@
     "title": "Tower Shield of the Ironbeard Clan",
     "description": "Emblazoned with the sigil of the Ironbeard Clan, this tower shield is a symbol of dwarven resilience. Crafted from enchanted dwarven steel, it provides unparalleled protection in the heat of battle.",
     "image": "./images/tower-shield-of-the-ironbeard-clan.jpg",
-    "price": 250.5,
+    "price": 549.99,
     "rating": {
       "rate": 4.8,
       "count": 95
@@ -81,7 +81,7 @@
     "title": "Plate Armor of the Mountain Lords",
     "description": "Worn by the ancient Mountain Lords in their battles against the dragons, this plate armor is a relic of a bygone era. Fashioned from dragon scales and enchanted with ancient magic, it offers supreme protection to its wearer.",
     "image": "./images/plate-armor-of-the-mountain-lords.jpg",
-    "price": 400.75,
+    "price": 649.99,
     "rating": {
       "rate": 4.9,
       "count": 110
@@ -92,7 +92,7 @@
     "title": "Dwarven Longsword",
     "description": "The Dwarven Longsword is a weapon of elegance and precision. Crafted by master dwarven smiths, its blade is honed to perfection, capable of slicing through even the toughest of armor.",
     "image": "./images/dwarven-longsword.jpg",
-    "price": 180.99,
+    "price": 199.99,
     "rating": {
       "rate": 4.7,
       "count": 85
@@ -103,7 +103,7 @@
     "title": "Warhammer of the Stonehammer Clan",
     "description": "Forged by the Stonehammer Clan in the fires of their ancestral forge, this warhammer is a symbol of dwarven might. Crafted from enchanted granite, it shatters bones and crushes skulls with ease.",
     "image": "./images/warhammer-of-the-stonehammer-clan.jpg",
-    "price": 190.5,
+    "price": 699.99,
     "rating": {
       "rate": 4.5,
       "count": 75
@@ -114,7 +114,7 @@
     "title": "Shield of the Ironclad",
     "description": "The Shield of the Ironclad is a testament to dwarven craftsmanship. Crafted from the finest dwarven steel and imbued with protective enchantments, it offers unmatched defense against all manner of attacks.",
     "image": "./images/shield-of-the-ironclad.jpg",
-    "price": 230.99,
+    "price": 299.99,
     "rating": {
       "rate": 4.6,
       "count": 90
@@ -125,7 +125,7 @@
     "title": "Dwarven Greataxe",
     "description": "The Dwarven Greataxe is a massive weapon, capable of cleaving through entire armies with a single swing. Crafted by the skilled hands of dwarven blacksmiths, it strikes fear into the hearts of enemies.",
     "image": "./images/dwarven-greataxe.jpg",
-    "price": 220.25,
+    "price": 229.99,
     "rating": {
       "rate": 4.4,
       "count": 80
@@ -136,7 +136,7 @@
     "title": "Helmet of the Dwarven Kings",
     "description": "Worn by the ancient kings of the dwarves, this helmet is a symbol of dwarven sovereignty. Crafted from enchanted mithril, it provides its wearer with unparalleled protection in battle.",
     "image": "./images/helmet-of-the-dwarven-kings.jpg",
-    "price": 180.75,
+    "price": 449.99,
     "rating": {
       "rate": 4.8,
       "count": 100
@@ -147,7 +147,7 @@
     "title": "Magic Dwarven Boots of Flight",
     "description": "Crafted by skilled dwarven sorcerers, these enchanted boots grant the power of flight. Made from the finest dwarven leather and adorned with magical runes, they allow their wearer to soar through the skies. Stylish and functional, they are essential for any adventurer.",
     "image": "./images/magic-dwarven-boots-of-flight.jpg",
-    "price": 210.99,
+    "price": 999.99,
     "rating": {
       "rate": 4.5,
       "count": 203

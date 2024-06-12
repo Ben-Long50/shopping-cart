@@ -1,8 +1,9 @@
 .pageLayout {
+  flex-grow: 1;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr clamp(300px, 25vw, 800px);
-  /* overflow-x: hidden; */
+  grid-template-columns: 1fr clamp(500px, 25vw, 800px);
+  grid-template-rows: auto 100%;
 }
 
 .content {

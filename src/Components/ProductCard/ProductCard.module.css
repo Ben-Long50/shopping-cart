@@ -4,10 +4,6 @@
   color: white;
 }
 
-.title:hover {
-  text-decoration: underline;
-}
-
 .productImg {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -32,10 +28,13 @@
 }
 
 .description {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  height: 3rem;
   overflow: hidden;
+  transition: height 1s ease;
+}
+
+.description:hover {
+  height: auto;
 }
 
 .ratingContainer,

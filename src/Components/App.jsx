@@ -20,7 +20,6 @@ const App = () => {
     };
 
     fetchData();
-    console.log(topProducts);
   }, []);
 
   const getTopProducts = (products) => {
@@ -38,12 +37,23 @@ const App = () => {
     setTopProducts(newList);
   };
 
+  const hideCart = () => {
+    const cart = document.querySelector('#cart');
+    const pageLayout = document.querySelector('#page-layout');
+    cart.classList.remove('visible');
+    pageLayout.classList.remove('tinted');
+  };
+
   return (
     <div className="bgFilter">
-      <Navigation />
+      <Navigation cart={cart} hideCart={hideCart} />
       <div className={styles.pageLayout}>
-        <Outlet context={[products, setProducts, topProducts, cart, setCart]} />
-        <Cart cart={cart} />
+        <div id="page-layout" onClick={hideCart}>
+          <Outlet
+            context={[products, setProducts, topProducts, cart, setCart]}
+          />
+        </div>
+        <Cart cart={cart} setCart={setCart} hideCart={hideCart} />
       </div>
     </div>
   );

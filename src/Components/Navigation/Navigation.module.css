@@ -2,13 +2,27 @@
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  padding: 1rem 2rem;
+
+  color: white;
+  background-image: url('/images/stone-background.jpg');
+  z-index: 1;
+}
+
+.bgFilter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bgFilter2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  color: white;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 2rem;
   background-color: var(--primary-bg);
-  z-index: 1;
 }
 
 .icon {
@@ -38,19 +52,38 @@
 }
 
 .navLink,
-.cart {
-  font-size: 1.5rem;
+.cartIcon {
   font-family: 'poppins';
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   transition: color 0.25s linear;
 }
 
 .navLink:hover,
-.cart:hover {
+.cartIcon:hover {
   color: red;
 }
 
 .cart {
+  position: relative;
   justify-self: right;
+}
+
+.itemCount {
+  box-sizing: border-box;
+  font-family: 'poppins';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-top: 2px;
+  width: 1.2rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
 }

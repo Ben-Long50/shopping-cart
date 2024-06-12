@@ -14,9 +14,6 @@ const ProductCard = ({
   setCart,
 }) => {
   function addToCart() {
-    const shoppingCart = document.querySelector('#cart');
-    shoppingCart.classList.add('visible');
-
     let itemInCart = false;
 
     const newCart = cart.map((item) => {
@@ -44,9 +41,7 @@ const ProductCard = ({
 
   return (
     <div to={title} className={styles.card}>
-      <Link to={`/${path}`} className={styles.title}>
-        {title}
-      </Link>
+      <h1 className={styles.title}>{title}</h1>
       <div
         className={styles.productImg}
         style={{ backgroundImage: `url(${image})` }}
