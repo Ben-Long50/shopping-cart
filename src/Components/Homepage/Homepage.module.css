@@ -32,7 +32,7 @@
 }
 
 .title {
-  font-size: 5rem;
+  font-size: clamp(3rem, 10vw, 3.5rem);
   font-family: 'ragna-runes';
   letter-spacing: 0.25rem;
   text-wrap: nowrap;
@@ -40,15 +40,15 @@
 }
 
 .text {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
 }
 
 .button {
   box-sizing: border-box;
   width: auto;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
   color: white;
-  border: solid white 3px;
+  border: solid white 2.5px;
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 0.75rem;
@@ -69,26 +69,30 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 3.5rem;
+  padding: clamp(1rem, 5vw, 3rem);
   align-items: center;
   color: white;
   font-family: 'poppins';
-  gap: 5rem;
+  gap: clamp(1.5rem, 7vw, 3rem);
 }
 
 .title2 {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 10vw, 3.5rem);
   font-family: 'ragna-runes';
   letter-spacing: 0.25rem;
-  text-wrap: nowrap;
   font-weight: bold;
+  text-align: center;
+  line-height: 4rem;
 }
 
 .bestSellingContainer {
+  max-width: 1500px;
+  justify-self: center;
+}
+
+.bestSellingGrid {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  max-width: 1500px;
-  gap: 5rem;
-  justify-self: center;
+  gap: clamp(1.5rem, 7vw, 3rem);
 }

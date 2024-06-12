@@ -23,21 +23,23 @@ const Homepage = () => {
       <section className={styles.bestSelling}>
         <h1 className={styles.title2}>Best Selling Armaments</h1>
         <div className={styles.bestSellingContainer}>
-          {topProducts.map((product) => (
-            <ProductCard
-              className={styles.card}
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              description={product.description}
-              image={product.image}
-              price={product.price}
-              rating={product.rating.rate}
-              count={product.rating.count}
-              cart={cart}
-              setCart={setCart}
-            />
-          ))}
+          <div className={styles.bestSellingGrid}>
+            {topProducts.map((product) => (
+              <ProductCard
+                className={styles.card}
+                key={product.id}
+                id={product.id}
+                title={product.title}
+                description={product.description}
+                image={product.image}
+                price={product.price}
+                rating={product.rating.rate}
+                count={product.rating.count}
+                cart={cart}
+                setCart={setCart}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>

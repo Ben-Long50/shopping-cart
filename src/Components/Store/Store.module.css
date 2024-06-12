@@ -10,7 +10,7 @@
   color: white;
   font-size: clamp(2.5rem, 10vw, 3.5rem);
   font-family: 'ragna-runes';
-  padding-top: clamp(1.5rem, 7vw, 3rem);
+  padding-top: clamp(1.5rem, 5vw, 3rem);
   letter-spacing: 0.25rem;
   text-wrap: nowrap;
   font-weight: bold;
@@ -33,7 +33,7 @@
 
 @media (max-width: 900px) {
   .storeContainer {
-    margin: clamp(1.5rem, 7vw, 3rem) 1.5rem;
+    margin: clamp(1rem, 5vw, 3rem);
   }
   .storeList {
     gap: 1.5rem;
