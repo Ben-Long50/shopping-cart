@@ -42,8 +42,8 @@ const Cart = ({ cart, setCart, hideCart }) => {
 
   return (
     <div id="cart" className={styles.cart}>
-      <div className={styles.bgFilter}>
-        <div className={styles.bgFilter2}>
+      <div id="bgFilter" className={styles.bgFilter}>
+        <div id="bgFilter2" className={styles.bgFilter2}>
           <div className={styles.cartContents}>
             <h1 className={styles.title}>Shopping Cart</h1>
             {cart.map((item, index) => {
@@ -77,7 +77,7 @@ const Cart = ({ cart, setCart, hideCart }) => {
                     </div>
                     <div className={styles.priceTotal}>
                       <p>Price Total:</p>
-                      <div>{item.price * item.quantity}</div>
+                      <div>{(item.price * item.quantity).toFixed(2)}</div>
                     </div>
                   </div>
                   <hr />
@@ -86,7 +86,7 @@ const Cart = ({ cart, setCart, hideCart }) => {
             })}
             <div className={styles.total}>
               <h2>Total:</h2>
-              <div>{total}</div>
+              <div>{total.toFixed(2)}</div>
             </div>
             <Link className={styles.button} to="checkout" onClick={hideCart}>
               Checkout

@@ -5,10 +5,18 @@ import styles from './Navigation.module.css';
 
 const Navigation = ({ cart, hideCart }) => {
   function toggleCart() {
+    const navBar = document.querySelector('#navBar');
     const cart = document.querySelector('#cart');
     const pageLayout = document.querySelector('#page-layout');
+
+    const navbarHeight = navBar.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const availableHeight = viewportHeight - navbarHeight;
+    console.log(availableHeight);
+
     if (!cart.classList.contains('visible')) {
       cart.style.display = 'block';
+      cart.style.height = `${availableHeight}px`;
       cart.offsetHeight;
       cart.classList.toggle('visible');
     } else {
@@ -24,7 +32,7 @@ const Navigation = ({ cart, hideCart }) => {
     totalItems += item.quantity;
   });
   return (
-    <nav className={styles.navBar}>
+    <nav id="navBar" className={styles.navBar}>
       <div className={styles.bgFilter}>
         <div className={styles.bgFilter2}>
           <div className={styles.navTitle}>
