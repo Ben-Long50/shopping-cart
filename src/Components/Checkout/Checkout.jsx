@@ -90,7 +90,7 @@ const Checkout = () => {
       <div className={styles.total}>
         <div className={styles.totalTitle}>
           <h2>Total:</h2>
-          <div>{total}</div>
+          <div>{total.toFixed(2)}</div>
         </div>
         <Link to="/" className={styles.completeButton} onClick={handleCheckout}>
           Complete Order
