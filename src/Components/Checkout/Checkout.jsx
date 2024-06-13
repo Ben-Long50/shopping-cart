@@ -82,7 +82,7 @@ const Checkout = () => {
             </div>
             <div className={styles.priceTotal}>
               <p>Price Total:</p>
-              <div>{item.price * item.quantity}</div>
+              <div>{(item.price * item.quantity).toFixed(2)}</div>
             </div>
           </div>
         </div>
